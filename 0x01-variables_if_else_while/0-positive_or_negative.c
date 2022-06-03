@@ -1,12 +1,12 @@
-nclude < stdlib.h >
+#include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+#include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - used to check condition
+ * main - used to check the condition
  *
- * Discription: return the result of the function
+ * Description: return the result of the functin
  *
  * Return: 0
  *
@@ -22,7 +22,7 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-	} else if (n == 0)
+	} else if (n ==0)
 	{
 		printf("%d is zero\n", n);
 	} else
