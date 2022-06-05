@@ -12,7 +12,7 @@ int main(void)
 
 	for (dn = 0; dn < 10; dn++)
 	{
-		putchar(dn);
+		putchar(dn + '0');
 	}
 		putchar('\n');
 
