@@ -7,21 +7,21 @@
 
 void print_diagonal(int n)
 {
-	int diago, spcae;
+	int diago = 0, spcae;
 
 	if (n > 0)
 	{
-		for (diago = 0; diago < n; diago++)
+		while (diago < n)
 		{
 			for (space = 0; space < diago; space++)
 				_putchar(' ');
+
 			_putchar('\\');
-
-			if (diago == n - 1)
-				continue;
-
 			_putchar('\n');
+
+			diago++;
 		}
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
