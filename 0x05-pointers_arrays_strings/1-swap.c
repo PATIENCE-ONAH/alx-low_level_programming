@@ -6,9 +6,11 @@
  * @b: Second interger
  */
 
-void swap_int(int *a, *b)
+void swap_int(int *a, int *b)
 {
-	int i = *a;
+	int i;
+
+	i = *a;
 	*a = *b;
 	*b = i;
 }
