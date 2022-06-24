@@ -10,7 +10,7 @@
  * And 1, if the program doestn't recieve two argument to indicate error
  */
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
 	int n1, n2, prod;
 
