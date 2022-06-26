@@ -6,13 +6,26 @@
 
 void print_rev(char *s)
 {
-	int len = 0, index;
+	int len = _strlen(s) - 1;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
-
+	while (len >= 0)
+	{
+		_putchar(s[len]);
+		len--;
+	}
 	_putchar('\n');
+}
+/**
+ * _strlen - returns the length of a string
+ * @s: the string whose length to return
+ * Return: the length of the string
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+
+	return (i);
 }
